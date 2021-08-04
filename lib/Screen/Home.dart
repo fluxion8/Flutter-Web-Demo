@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
 Widget successList(BuildContext context) => StaggeredGridView.countBuilder(
     shrinkWrap: true,
     staggeredTileBuilder: (int index) => new StaggeredTile.fit(2),
-    crossAxisCount: 4,
+    crossAxisCount: MediaQuery.of(context).size.width>800 ? 8:4,
     itemCount: newsStore.news.length,
     itemBuilder: (BuildContext context, int index) =>
         newsCard(newsStore.news[index]));
