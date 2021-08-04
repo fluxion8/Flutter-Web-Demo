@@ -1,6 +1,6 @@
 # recipe
 
-Recipe
+Imdb news
 
 ## Getting Started
 
